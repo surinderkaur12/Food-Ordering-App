@@ -1,0 +1,38 @@
+
+.container
+{
+  background-color: black;
+  /* min-width: 2100px; */
+  min-width: 210vh;
+
+}
+.explore{
+ color: white;
+  padding-left:600px;
+  font-size: 90px;
+  padding-top: 20px;
+}
+h2
+{
+  color:#EEEEEE!important;
+  padding-left: 30px;
+  padding-right: 50px;
+  margin-top: 20px;
+    font-family: "Dosis", sans-serif;
+}
+#drinks
+ {
+  height: 270px;
+  width: 250px;
+  border-radius: 50%;
+  border: 2px solid wheat;
+  margin: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 50px;
+ }
+#drinks:hover
+ {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border: 3px solid yellow;
+}

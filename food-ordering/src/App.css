@@ -1,0 +1,125 @@
+.main {
+  background-color: #000;
+}
+
+.maincontainer {
+  background-color: beige;
+}
+
+/* ✅ Navbar */
+nav {
+  position: fixed;
+  height: 100px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 14px 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* ✅ Container for logo + nav links */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 70px;
+}
+
+/* ✅ Logo */
+#logo {
+  transition: transform 0.3s ease;
+}
+#logo:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-right: 60px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background: linear-gradient(145deg, #ffae00, #ff9100);
+  color: #000;
+  box-shadow: 0 0 10px #ff9900;
+  transform: scale(1.1);
+}
+
+/* ✅ User icon */
+.nav-links li a:hover i.fa-user {
+  color: #ffcc00 !important;
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Cart icon */
+.nav-links li a:hover i.fa-cart-shopping {
+  color: #ffcc00 !important;
+  transform: scale(1.15);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✅ Cart badge */
+.cart-icon {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+/* ✅ Media Query (Optional Mobile Nav Improvements) */
+@media screen and (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 1.4rem;
+    padding: 10px 12px;
+  }
+}
+
+.carousel-caption h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}

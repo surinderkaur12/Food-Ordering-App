@@ -1,0 +1,41 @@
+ .menu1 {
+    height: 450px;
+    background-image: url('src/Resources/menu1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+.menu-text {
+    font-size: 50px;
+    margin-bottom: 10px;
+    padding-left: 1200px; 
+    color: red;
+}
+.menu-text1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding-left: 1050px; 
+}   
+.menu-table
+{
+    display: flex;
+    align-items: flex-start;  
+}
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin-left: 930px;
+}
+.BREAKFAST, .LUNCH, .DINNER, .DESSERTS {
+    font-size: 2.5rem;
+    color: green;
+    cursor: pointer;
+    padding: 50px 20px;
+    text-decoration: none;
+}
+.BREAKFAST:hover, .LUNCH:hover, .DINNER:hover, .DESSERTS:hover {
+    color: brown;
+} 
+

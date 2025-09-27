@@ -1,0 +1,124 @@
+.blogs{
+    background-color: black;
+}
+#blog {
+  padding-top: 210px;   
+  margin-top: -220px;     
+}
+
+#myblog
+{
+  text-align: center;
+  font-size: 5.3rem;
+  color: white;
+}
+.blog {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto; 
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 70px; 
+}
+.blog {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #222;
+}
+.blog::-webkit-scrollbar {
+  height: 8px;
+}
+.blog::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+} 
+.blog::-webkit-scrollbar-track {
+  background: #222;
+}
+
+.blog-cards {
+  flex: 0 0 auto;      
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 700px;
+  width: 600px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-cards:hover {
+  transform: scale(1.03);
+}
+
+.blog1-image,
+.blog2-image,
+.blog3-image,
+.blog4-image ,
+.blog5-image, 
+.blog6-image
+{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.4s ease-in-out;
+}
+
+
+.blog1-image {
+  background-image: url('src/Resources/blog8.jpg');
+}
+.blog1-image:hover {
+  background-image: url('src/Resources/blog1.jpg');
+}
+
+.blog2-image {
+  background-image: url('src/Resources/blog7.jpg');
+}
+.blog2-image:hover {
+  background-image: url('src/Resources/blog2.jpg');
+}
+
+.blog3-image {
+  background-image: url('src/Resources/blog6.jpg');
+}
+.blog3-image:hover {
+  background-image: url('src/Resources/blog3.jpg');
+}
+
+.blog4-image {
+  background-image: url('src/Resources/blog5.jpg');
+}
+.blog4-image:hover {
+  background-image: url('src/Resources/blog4.jpg');
+}
+
+.blog5-image {
+  background-image: url('src/Resources/blog9.jpg');
+}
+.blog5-image:hover {
+  background-image: url('src/Resources/blog11.jpg');
+}
+
+.blog6-image {
+  background-image: url('src/Resources/blog10.jpg');
+}
+.blog6-image:hover {
+  background-image: url('src/Resources/blog12.jpg');
+}
+
+@media (max-width: 768px) {
+  .blog-cards {
+    width: 90vw;
+    height: 400px;
+  }
+  
+
+}
+
+/* Accessibility: Focus style for keyboard navigation */
+.blog-cards:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}

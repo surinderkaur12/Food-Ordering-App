@@ -1,0 +1,51 @@
+.About_us {
+  display: flex;
+  padding: 2rem;
+  background-color: black;
+  height: 90vh;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-img {
+  flex: 1;
+  height: 100%;
+  background-image: url('src/Resources/about1.jpg');
+  background-size: cover;
+
+}
+
+.about-img:hover {
+  transform: scale(0.8);
+  background-image: url('src/Resources/about3.jpg');
+  cursor: pointer;
+}
+
+.about-text {
+  flex: 1;
+  padding: 2rem;
+  color: #fff;
+
+}
+
+.about-text h1 {
+  font-size: 4rem;
+  color: #e63946;
+  margin-bottom: 1rem;
+  text-align: right;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: peru !important;
+  margin-bottom: 1rem;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: left;
+  font-family: "Dosis", sans-serif;
+  padding-right: 4px;
+}

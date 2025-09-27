@@ -1,0 +1,54 @@
+.Service
+{
+    background-color: black;
+    height: 730px;
+  padding: 40px 20px;
+}
+.best-service
+{
+  text-align: center;
+  font-size: 5.4rem;
+  color: white !important;
+
+}
+.service-cards
+{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 80px;
+}
+.cards1, .cards2, .cards3
+{
+    border: 3px solid grey;
+    height: 340px;
+    width: 360px;   
+    background-color: lightgrey;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+.cards1:hover, .cards2:hover, .cards3:hover
+{
+  background-color:white;
+}
+.service-text
+{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    margin-left: 12px;
+    color: black;  
+}
+#h2{
+    color: red !important;
+    font-size: 2rem;
+    text-align: center;
+}
+.icon-container
+{
+    font-size: 2rem;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
